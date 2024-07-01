@@ -11,6 +11,16 @@ public class BallControler : MonoBehaviour
         {
                 ballRb.AddForce(Vector3.up * speed,ForceMode.Impulse);
         }
+
+        else if (collision.gameObject.CompareTag("DangerRing"))
+        {
+            Debug.Log("Game Over");
+        }
+
+        else if (collision.gameObject.CompareTag("WinRing"))
+        {
+            Debug.Log("Level Complete");
+        }
     }
 }
 
