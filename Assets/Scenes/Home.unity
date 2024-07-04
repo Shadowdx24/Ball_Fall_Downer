@@ -385,9 +385,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1739297510644762690, guid: d35316290bac419489fb2bfb8fbda46c, type: 3}
+      propertyPath: m_Name
+      value: BtnStore
+      objectReference: {fileID: 0}
     - target: {fileID: 2778780995466862589, guid: d35316290bac419489fb2bfb8fbda46c, type: 3}
       propertyPath: m_Name
       value: GameTitleCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264123571747867741, guid: d35316290bac419489fb2bfb8fbda46c, type: 3}
+      propertyPath: m_text
+      value: Store
       objectReference: {fileID: 0}
     - target: {fileID: 7610321856143382775, guid: d35316290bac419489fb2bfb8fbda46c, type: 3}
       propertyPath: m_Pivot.x

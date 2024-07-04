@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b89959b3545199a4a9c17580fab5f475, type: 2}
+  - {fileID: 2100000, guid: 85676295bcc2a3343927c4e6b0b1e4e0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -115,7 +115,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095177933444914247}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.65
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -148,4 +148,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballRb: {fileID: 3583042152463482445}
   speed: 1.7
-  gameOverObj: {fileID: 8609874474232040905, guid: f7260866eb3ba32458313941aff8a479, type: 3}
+  gameOverObj: {fileID: 0}
+  levelWinObj: {fileID: 0}

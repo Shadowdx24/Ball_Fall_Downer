@@ -12,7 +12,7 @@ public class BallControler : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ring"))
         {
-                ballRb.AddForce(Vector3.up * speed,ForceMode.Impulse);
+            ballRb.AddForce(Vector3.up * speed,ForceMode.Impulse);   
         }
 
         else if (collision.gameObject.CompareTag("DangerRing"))
@@ -42,7 +42,7 @@ public class BallControler : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1f;
         gameOverObj.SetActive(false);
     }
