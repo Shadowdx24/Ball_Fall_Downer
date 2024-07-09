@@ -5,6 +5,7 @@ public class BallControler : MonoBehaviour
 {
     [SerializeField] private Rigidbody ballRb;
     [SerializeField] private float speed;
+    [SerializeField] private float bounceForce;
     [SerializeField] private GameObject gameOverObj;
     [SerializeField] private GameObject levelWinObj;
     
@@ -12,7 +13,8 @@ public class BallControler : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ring"))
         {
-            ballRb.AddForce(Vector3.up * speed,ForceMode.Impulse);   
+            ballRb.velocity = new Vector3(ballRb.velocity.x, bounceForce * Time.deltaTime, ballRb.velocity.z);
+            //ballRb.AddForce(Vector3.up * speed,ForceMode.Impulse);
         }
 
         else if (collision.gameObject.CompareTag("DangerRing"))
