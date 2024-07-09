@@ -42,7 +42,7 @@ public class BallControler : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    public void Restart()
+    public void GameRestart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1f;
@@ -61,6 +61,7 @@ public class BallControler : MonoBehaviour
         SceneManager.LoadScene(0);
         Time.timeScale = 1f;
         gameOverObj.SetActive(false);
+        levelWinObj.SetActive(false);
     }
 
     public void GameQuit()
