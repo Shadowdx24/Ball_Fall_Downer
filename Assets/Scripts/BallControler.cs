@@ -8,7 +8,16 @@ public class BallControler : MonoBehaviour
     [SerializeField] private float bounceForce;
     [SerializeField] private GameObject gameOverObj;
     [SerializeField] private GameObject levelWinObj;
-    
+    [SerializeField] private MeshRenderer ballRenderer;
+    [SerializeField] private Material[] ballMaterials;
+    private int currball;
+
+    void Start()
+    {
+        currball = PlayerPrefs.GetInt("MainBall");
+        ballRenderer.material = ballMaterials[currball];
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("ring"))

@@ -129,7 +129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2007178875558487855
 RectTransform:
   m_ObjectHideFlags: 0
@@ -285,9 +285,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.31764707, g: 0.59607846, b: 1, a: 1}
+    m_PressedColor: {r: 0.11764706, g: 0.36078432, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -307,9 +307,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8291622944734225587}
+      - m_Target: {fileID: 9070442894095470297}
         m_TargetAssemblyTypeName: StoreManager, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: BallNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -417,9 +417,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.31764707, g: 0.59607846, b: 1, a: 1}
+    m_PressedColor: {r: 0.11764706, g: 0.36078432, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -439,9 +439,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8291622944734225587}
+      - m_Target: {fileID: 9070442894095470297}
         m_TargetAssemblyTypeName: StoreManager, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: BallPrev
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -549,9 +549,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.31764707, g: 0.59607846, b: 1, a: 1}
+    m_PressedColor: {r: 0.11764706, g: 0.36078432, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -681,9 +681,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.31764707, g: 0.59607846, b: 1, a: 1}
+    m_PressedColor: {r: 0.11764706, g: 0.36078432, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -705,7 +705,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 9070442894095470297}
         m_TargetAssemblyTypeName: StoreManager, Assembly-CSharp
-        m_MethodName: GameHome
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -888,9 +888,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.31764707, g: 0.59607846, b: 1, a: 1}
+    m_PressedColor: {r: 0.11764706, g: 0.36078432, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1113,7 +1113,7 @@ Canvas:
   m_GameObject: {fileID: 8291622944734225587}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1179,8 +1179,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52799e6b70872cf44a1578090bbfc139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballRenderer: {fileID: 0}
+  ballMaterials:
+  - {fileID: 2100000, guid: b89959b3545199a4a9c17580fab5f475, type: 2}
+  - {fileID: 2100000, guid: 85676295bcc2a3343927c4e6b0b1e4e0, type: 2}
+  - {fileID: 2100000, guid: 8c3710c1f6ca2f941ac577db7b723206, type: 2}
   gameTitleObj: {fileID: 0}
   storeObj: {fileID: 8291622944734225587}
+  BallObj: {fileID: 0}
 --- !u!1 &8557461300513438530
 GameObject:
   m_ObjectHideFlags: 0
