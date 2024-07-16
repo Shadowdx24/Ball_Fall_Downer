@@ -10,7 +10,6 @@ public class StoreManager : MonoBehaviour
     [SerializeField] private GameObject BallObj;
     private int ballIndex;
 
-
     void Start()
     {
         ballIndex = 0;
@@ -28,20 +27,27 @@ public class StoreManager : MonoBehaviour
         ShowBallColor(ballIndex);
     }
 
-    private void ShowBallColor(int ColorName)
+    private void ShowBallColor(int colorName)
     {
-        if (ColorName > ballMaterials.Length - 1)
+        if (colorName > ballMaterials.Length - 1)
         {
-            ColorName = 0;
+            colorName = 0;
         }
-        else if (ColorName < 0)
+        else if (colorName < 0)
         {
-            ColorName = ballMaterials.Length - 1;
+            colorName = ballMaterials.Length - 1;
         }
 
-        ballIndex = ColorName;
+        ballIndex = colorName;
         ballRenderer.material = ballMaterials[ballIndex];
-        PlayerPrefs.SetInt("MainBall", ColorName);
+        PlayerPrefs.SetInt("MainBall", colorName);
+    }
+    public void GameStart()
+    {
+        SceneManager.LoadScene(1);
+        Time.timeScale = 1f;
+        BallObj.SetActive(false);
+        storeObj.SetActive(false);
     }
 
     public void GameHome()
@@ -53,11 +59,4 @@ public class StoreManager : MonoBehaviour
         
     }
 
-    public void GameStart()
-    {
-        SceneManager.LoadScene(1);
-        Time.timeScale = 1f;
-        BallObj.SetActive(false);
-        storeObj.SetActive(false);
-    }
 }
