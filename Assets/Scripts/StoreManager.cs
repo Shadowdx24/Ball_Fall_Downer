@@ -42,6 +42,7 @@ public class StoreManager : MonoBehaviour
         ballRenderer.material = ballMaterials[ballIndex];
         PlayerPrefs.SetInt("MainBall", colorName);
     }
+
     public void GameStart()
     {
         SceneManager.LoadScene(1);
