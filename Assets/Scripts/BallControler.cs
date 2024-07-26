@@ -9,6 +9,7 @@ public class BallControler : MonoBehaviour
     [SerializeField] private float bounceForce;
     [SerializeField] private GameObject gameOverObj;
     [SerializeField] private GameObject levelWinObj;
+    [SerializeField] private GameObject gamePauseObj;
     [SerializeField] private MeshRenderer ballRenderer;
     [SerializeField] private Material[] ballMaterials;
     [SerializeField] private TextMeshProUGUI scoreText;
@@ -42,6 +43,7 @@ public class BallControler : MonoBehaviour
         {
             score = 0;
         }
+
         highScore = PlayerPrefs.GetInt("Highscore");
         highScoreText.text = "" + highScore;
         //addScore = 0;
@@ -99,6 +101,12 @@ public class BallControler : MonoBehaviour
         highScoreText1.text = "High Score : " + highScore;
     }
 
+    public void GamePause()
+    {
+        gamePauseObj.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
     private void LevelWin()
     {
         levelWinObj.SetActive(true);
@@ -112,6 +120,13 @@ public class BallControler : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1f;
         gameOverObj.SetActive(false);
+        score = 0;
+    }
+
+    public void GameResume()
+    {
+        gamePauseObj.SetActive(false);
+        Time.timeScale = 1f;
         score = 0;
     }
 

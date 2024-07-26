@@ -31,4 +31,12 @@ public class InputManager : MonoBehaviour
             newTap = true;
         }
     }
+
+    //private void MovetoTouch()
+    //{
+    //    if (Input.touchCount > 0)
+    //    {
+
+    //    }
+    //}
 }
