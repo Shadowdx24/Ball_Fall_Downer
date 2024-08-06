@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class Home : MonoBehaviour
 {
     [SerializeField] private GameObject storeObj;
+    [SerializeField] private GameObject settingObj;
     [SerializeField] private GameObject gameTitleObj;
     [SerializeField] private GameObject BallObj;
 
@@ -17,6 +18,13 @@ public class Home : MonoBehaviour
     {
         storeObj.SetActive(true);
         BallObj.SetActive(true);
+        Time.timeScale = 1f;
+        gameTitleObj.SetActive(false);
+    }
+
+    public void GameSetting()
+    {
+        settingObj.SetActive(true);
         Time.timeScale = 1f;
         gameTitleObj.SetActive(false);
     }

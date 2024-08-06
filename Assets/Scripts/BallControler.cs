@@ -24,25 +24,27 @@ public class BallControler : MonoBehaviour
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Level 1")
-        {
-            score = 0;
-            scoreText.text = "" + score;
-        }
-        else if (SceneManager.GetActiveScene().name == "Level 2")
-        {
-            score = PlayerPrefs.GetInt("Score");
-            scoreText.text = "" + score;
-        }
-        else if (SceneManager.GetActiveScene().name == "Level 3")
-        {
-            score = PlayerPrefs.GetInt("Score");
-            scoreText.text = "" + score;
-        }
-        else
-        {
-            score = 0;
-        }
+        score = 0;
+        scoreText.text = "" + score;
+
+        //if (SceneManager.GetActiveScene().name == "Level 1")
+        //{
+           
+        //}
+        //else if (SceneManager.GetActiveScene().name == "Level 2")
+        //{
+        //    score = PlayerPrefs.GetInt("Score");
+        //    scoreText.text = "" + score;
+        //}
+        //else if (SceneManager.GetActiveScene().name == "Level 3")
+        //{
+        //    score = PlayerPrefs.GetInt("Score");
+        //    scoreText.text = "" + score;
+        //}
+        //else
+        //{
+        //    score = 0;
+        //}
 
         highScore = PlayerPrefs.GetInt("Highscore");
         highScoreText.text = "" + highScore;

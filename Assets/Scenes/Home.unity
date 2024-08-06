@@ -665,6 +665,10 @@ PrefabInstance:
       propertyPath: storeObj
       value: 
       objectReference: {fileID: 998141461}
+    - target: {fileID: 7299547972770980728, guid: d35316290bac419489fb2bfb8fbda46c, type: 3}
+      propertyPath: settingObj
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7610321856143382775, guid: d35316290bac419489fb2bfb8fbda46c, type: 3}
       propertyPath: m_Pivot.x
       value: 0

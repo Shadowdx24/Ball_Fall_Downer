@@ -816,6 +816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 2124262831676408728, guid: 72295d40b8f5c58409d78cd38e5ed392, type: 3}
+      propertyPath: ballPos
+      value: 
+      objectReference: {fileID: 3427831050711617660}
     - target: {fileID: 5157293514436137696, guid: 72295d40b8f5c58409d78cd38e5ed392, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1077,6 +1081,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1417526946688362825, guid: ba62a43f3f8b6c34b94fdf5ef68c967d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3427831050711617659}
+    - target: {fileID: 1417526946688362825, guid: ba62a43f3f8b6c34b94fdf5ef68c967d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GamePause
+      objectReference: {fileID: 0}
     - target: {fileID: 2169826105002903704, guid: ba62a43f3f8b6c34b94fdf5ef68c967d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2122,6 +2134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df81f688a505d445be669448babe4c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &3427831050711617660 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1704797185680216333, guid: 96137e3b60011f045b12c0e766dc5c30, type: 3}
+  m_PrefabInstance: {fileID: 3427831050711617658}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6651602538067666044
 PrefabInstance:
   m_ObjectHideFlags: 0
