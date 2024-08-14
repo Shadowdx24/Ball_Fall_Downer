@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 85676295bcc2a3343927c4e6b0b1e4e0, type: 2}
+  - {fileID: 2100000, guid: 23988e217c7807f4eb16e4733f3e52a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -151,8 +151,16 @@ MonoBehaviour:
   bounceForce: 225
   gameOverObj: {fileID: 0}
   levelWinObj: {fileID: 0}
+  gamePauseObj: {fileID: 0}
   ballRenderer: {fileID: 5580461280030728493}
   ballMaterials:
   - {fileID: 2100000, guid: b89959b3545199a4a9c17580fab5f475, type: 2}
   - {fileID: 2100000, guid: 85676295bcc2a3343927c4e6b0b1e4e0, type: 2}
   - {fileID: 2100000, guid: 8c3710c1f6ca2f941ac577db7b723206, type: 2}
+  - {fileID: 2100000, guid: 23988e217c7807f4eb16e4733f3e52a4, type: 2}
+  scoreText: {fileID: 0}
+  highScoreText: {fileID: 0}
+  scoreText1: {fileID: 0}
+  highScoreText1: {fileID: 0}
+  scoreText2: {fileID: 0}
+  highScoreText2: {fileID: 0}
