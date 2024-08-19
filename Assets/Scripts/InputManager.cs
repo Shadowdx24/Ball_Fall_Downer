@@ -4,7 +4,7 @@ public class InputManager : MonoBehaviour
 {
     private Vector3 lastPos = Vector3.zero;
     private bool newTap = true;
-    private int currControls;
+   // [SerializeField] private float speed;
 
     void Start()
     {
@@ -17,11 +17,11 @@ public class InputManager : MonoBehaviour
 
         if (Input.GetMouseButton(0))
         {
-            Vector3 currentPos = Input.mousePosition;
+            Vector3 currentPos = Input.mousePosition ;
 
             if (newTap)
             {
-                lastPos = currentPos;
+                lastPos = currentPos;   
             }
 
             float delta = currentPos.x - lastPos.x;
@@ -38,75 +38,5 @@ public class InputManager : MonoBehaviour
             newTap = true;
         }
 
-        //DetectInput();
-    }
-
-    private void DetectInput()
-    {
-        switch (currControls)
-        {
-            case 1:
-            {
-                MoveToMouseClick();
-                break;
-            }
-            case 2:
-            {
-                MovetoTouch();
-                break;
-            }
-        }
-    }
-
-    private void MoveToMouseClick()
-    {
-        if (Input.GetMouseButton(0))
-        {
-            Vector3 currentPos = Input.mousePosition;
-
-            if (newTap)
-            {
-                lastPos = currentPos;
-            }
-
-            float delta = currentPos.x - lastPos.x;
-
-            transform.Rotate(delta * Vector3.up);
-
-            lastPos = currentPos;
-
-            newTap = false;
-        }
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            newTap = true;
-        }
-    }
-
-    private void MovetoTouch()
-    {
-        if (Input.touchCount > 0)
-        {
-            Vector3 currentPos = Input.mousePosition;
-
-            if (newTap)
-            {
-                lastPos = currentPos;
-            }
-
-            float delta = currentPos.x - lastPos.x;
-
-            transform.Rotate(delta * Vector3.up);
-
-            lastPos = currentPos;
-
-            newTap = false;
-        }
-
-        if (Input.touchCount > 0)
-        {
-            newTap = true;
-        }
     }
 }

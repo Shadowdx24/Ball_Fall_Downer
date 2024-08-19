@@ -1053,6 +1053,10 @@ PrefabInstance:
       propertyPath: highScoreText
       value: 
       objectReference: {fileID: 69793827}
+    - target: {fileID: 860354943492972034, guid: c39e73d421cd4a74d8faa60cd43cf1f7, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 909722016335691920, guid: c39e73d421cd4a74d8faa60cd43cf1f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
